@@ -37,10 +37,14 @@
           msg.style.color = "yellow"
           pass.style.borderColor ="yellow"
         }
-        else if(pass.value.length > 8) {
+        else if(pass.value.length >= 8) {
           str.innerHTML = "Strong";
           msg.style.color = "green"
           pass.style.borderColor ="green"
+        }
+        else if(pass.value.length >= 18){
+          str.innerHTML = "Brave";
+          pass.style.borderColor = "steelblue"
         }
       })
     </script>
